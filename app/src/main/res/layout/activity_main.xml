@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+ 
+ 
+ <ProgressBar
+     android:id="@+id/ProgressBar"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+     android:visibility="gone"
+     />
+
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/image1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginTop="15dp"
+     android:hint=" Input your Name"
+     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+     app:startIconDrawable="@drawable/img_person"
+     app:endIconMode="clear_text"
+     app:counterEnabled="true"
+     app:counterMaxLength="25"
+     app:helperText="* Required"
+     app:hintTextColor="#DA1717"
+     app:helperTextTextColor="#D80E0E"   
+     >
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:maxLength="25"
+      android:inputType="textPersonName"
+      />
+
+
+ </com.google.android.material.textfield.TextInputLayout>
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/image2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginTop="7dp"
+     android:hint="Input your Number"
+     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+     app:startIconDrawable="@drawable/img_person"
+     app:endIconMode="clear_text"
+     app:counterEnabled="true"
+     app:counterMaxLength="25"
+     app:helperText="* Required"
+     app:hintTextColor="#DA1717"
+     app:helperTextTextColor="#D80E0E"
+     android:layout_below="@+id/image1"
+    
+     >
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edNumber"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:maxLength="25"
+      android:inputType="number"
+      />
+
+
+ </com.google.android.material.textfield.TextInputLayout>
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/image3"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginTop="7dp"
+     android:hint="Input your Email"
+     style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+     app:startIconDrawable="@drawable/img_person"
+     app:endIconMode="clear_text"
+     app:counterEnabled="true"
+     app:counterMaxLength="50"
+     app:helperText="* Required"
+     app:hintTextColor="#DA1717"
+     app:helperTextTextColor="#D80E0E"
+     android:layout_below="@+id/image2"
+  
+     >
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:maxLength="50"
+      android:inputType="textEmailAddress"
+      />
+
+
+ </com.google.android.material.textfield.TextInputLayout>
+ 
+ <Button
+     android:id="@+id/Upload_button"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/image3"
+     android:layout_marginTop="25dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginLeft="20dp"
+     android:textSize="20dp"
+     android:text="Upload Data"
+     android:gravity="center"
+     android:backgroundTint="#FF9800"
+
+     />
+
+</RelativeLayout>
